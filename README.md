@@ -1,3 +1,0 @@
-<!-- # juandonquis.github.io
-Portfolio
- -->
