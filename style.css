@@ -1,1 +1,136 @@
+/* -------------------------- General -----------------------------*/
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+
+}
+body{
+
+	overflow-x: hidden;
+}
+
+.container-custom{
+
+	max-width: 1140px;
+	padding: 30px;
+	margin:auto;
+}
+
+a{
+	text-decoration: none;
+
+}
+
+
+/*---------------------------- navbar ------------------------------------------*/
+
+nav{
+
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height: 50px;
+	z-index: 999;
+	background-color: white;
+	max-width: 1140px;
+
+}
+
+.nav-item{
+
+	padding: 0px 10px; 
+}
+.title-brand{
+	background-color: red;
+}
+
+
+/*---------------------------- Hero ------------------------------------------*/
+
+#hero{
+
+
+	height: 80vh;
+	padding-top: 10%;
+}
+
+#type-text{
+
+ 	width: 100%;
+ 	border-right: 5px solid;
+ 	white-space: nowrap;
+ 	overflow: hidden;
+ 	letter-spacing: 3px;
+ 	animation: 
+ 		typing 2s steps(17),
+ 		cursor .4s step-end infinite alternate;
+}
+@keyframes cursor{
+
+	50%{ border-color: transparent;  }
+}
+@keyframes typing{
+
+	from {width: 0%; }
+}
+.image{
+
+	background: url(./assets/img/perfil.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+}
+.introduce-card{
+	position: relative;
+	width: 650px;
+	height: 300px;
+	padding: 30px;
+	/* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+animation: moveleft 3.2s ease-out;
+}
+
+@keyframes moveleft{
+
+	0% { transform: translateX(200vw); }
+	30% { transform: translateX(200vw); }
+	50% { transform: translateX(200vw); }
+	100% { transform: translateX(0px); }
+
+
+}
+
+#name{
+
+	font-weight: 500;
+}
+#line-right{
+
+	position: absolute;
+	width: 200vw;
+	top: 50%;
+	right: -200vw;
+	height: 3px;
+	background: rgb(27,136,213);
+	background: linear-gradient(90deg, rgba(27,136,213,1) 0%, rgba(72,195,217,1) 20%, rgba(77,202,217,1) 36%, rgba(84,211,217,1) 49%, rgba(85,212,217,1) 62%, rgba(106,240,219,1) 80%); 
+
+}
+
+
 .color-primary{ color: blue }
+
+
+ /*#6AF0DB;*/
+ /*#5FB4F0;*/
+
+
+
