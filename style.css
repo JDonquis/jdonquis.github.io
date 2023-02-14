@@ -153,6 +153,36 @@ animation: moveleft 3.2s ease-out;
 
 }
 
+#line-bottom{
+
+	position: absolute;
+	width: 650px;
+	bottom: -330px;
+	right: 0%;
+	height: 3px;
+	transform: rotate(90deg);
+	background: rgb(27,136,213);
+	background: linear-gradient(90deg, rgba(27,136,213,1) 0%, rgba(72,195,217,1) 20%, rgba(77,202,217,1) 36%, rgba(84,211,217,1) 49%, rgba(85,212,217,1) 62%, rgba(106,240,219,1) 80%); 
+	animation: go-line-down 4s ease-out;
+}
+
+@keyframes go-line-down{
+
+	0%{ width: 0px; 
+
+
+	bottom: 0px;
+	right: 50%;
+
+	}
+	80%{ width: 0px; 	bottom: 0px;
+	right: 50%; }
+	100%{ width: 650px; 
+
+			bottom: -330px;
+	right: 0%;
+	}
+} 
 
 .color-primary{ color: blue }
 
