@@ -27,11 +27,10 @@ a{
 
 nav{
 
-	position: fixed;
-	top: 0px;
+
 	width: 100%;
 	z-index: 999;
-	background-color: white;
+	background-color: transparent;
 	max-width: 1140px;
 
 }
@@ -79,7 +78,7 @@ nav{
 #hero{
 
 
-	height: 80vh;
+
 	padding-top: 10%;
 }
 
@@ -153,42 +152,192 @@ animation: moveleft 3.2s ease-out;
 
 }
 
+.box-line-bottom{
+
+	height: 450px;
+}
+
 #line-bottom{
 
-	position: absolute;
-	width: 650px;
-	bottom: -330px;
-	right: 0%;
-	height: 3px;
-	transform: rotate(90deg);
+	position: relative;
+	width: 3px;
+	height: 100%;
+	top: 0px;
+	left:30%;
 	background: rgb(27,136,213);
 	background: linear-gradient(90deg, rgba(27,136,213,1) 0%, rgba(72,195,217,1) 20%, rgba(77,202,217,1) 36%, rgba(84,211,217,1) 49%, rgba(85,212,217,1) 62%, rgba(106,240,219,1) 80%); 
 	animation: go-line-down 4s ease-out;
 }
 
+
+
 @keyframes go-line-down{
 
-	0%{ width: 0px; 
+	0%{ height: 0px; }
 
-
-	bottom: 0px;
-	right: 50%;
-
-	}
-	80%{ width: 0px; 	bottom: 0px;
-	right: 50%; }
-	100%{ width: 650px; 
-
-			bottom: -330px;
-	right: 0%;
-	}
+	80%{ height: 0px; }
+	
+	100%{ height: 100%;	}
 } 
 
-.color-primary{ color: blue }
+/*---------------------------- About me ------------------------------------------*/
+#about-me{
+
+	position: relative;
+	top: 410px;
+	left:40vw;
+	width: fit-content;
+	padding: 5px;
+}
+#about-me::before{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: -23px;
+	width: 23px;
+	height: 3px;
+	background: rgb(27,136,213);
+	background: linear-gradient(90deg, rgba(27,136,213,1) 0%, rgba(72,195,217,1) 20%, rgba(77,202,217,1) 36%, rgba(84,211,217,1) 49%, rgba(85,212,217,1) 62%, rgba(106,240,219,1) 80%); 
+
+}
+.margin-edit{
+
+	margin-top: 350px;
+}
 
 
- /*#6AF0DB;*/
- /*#5FB4F0;*/
+
+.border-image{
+
+	margin: auto;
+	min-height: 300px;
+	width: 300px;
+	border: 2px solid #6af0db;
+	border-radius: 16px;
+}
+
+.image-about{
+
+	background: url(./assets/img/perfil.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 300px;
+	height: 300px;
+	position: relative;
+	bottom: 20px;
+	right: 20px;
+	border-radius: 16px;
+}
+
+.circle{
+
+	height: 1200px;
+	width: 1200px;
+	background: linear-gradient(90deg,rgba(106,240,219,1) 0% ,rgba(85,212,217,1) 20%, rgba(84,211,217,1) 36%, rgba(77,202,217,1) 49%, rgba(72,195,217,1) 62%,rgba(27,136,213,1) 80%) ; 
+	border-radius: 100%;
+	position: relative;
+	bottom: 250px;
+	left: 900px;
+}
+
+.list-tecno{
+	list-style: none;
+}
+.list-tecno>li{
+
+	padding: 10px;
+/*	background: red;*/
+	cursor: pointer;
+	border-radius: 10px;
+	border: 1px solid #6af0db;
+	margin: 10px 0px;
+	min-width:300px;
+	max-width: 300px;
+}
+
+.list-tecno>li:hover{
+	color: white;
+	background: linear-gradient(90deg, rgba(27,136,213,1) 0%, rgba(72,195,217,1) 20%, rgba(77,202,217,1) 36%, rgba(84,211,217,1) 49%, rgba(85,212,217,1) 62%, rgba(106,240,219,1) 80%); 
+}
+
+.box-content-tecno{
+
+	max-width: 50%;
+}
+.image-tecno{
+
+	height: 200px;
+	width: 200px;
+}
+.box-text-tecno{
+
+	padding: 20px 10px;
+}
 
 
 
+
+/* ------------------------------------------------------------------------------- Contents tecno ---------------------------------------------- */
+
+#laravel-img{
+
+	background: url(./assets/img/laravel.svg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+
+#wordpress-img{
+
+	background: url(./assets/img/wordpress.svg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+
+#vuejs-img{
+
+	background: url(./assets/img/vue.svg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+
+#elementor-img{
+
+	background: url(./assets/img/elementor.svg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+
+#bootstrap-img{
+
+	background: url(./assets/img/bootstrap.svg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+
+#tailwind-img{
+
+	background: url(./assets/img/tailwind.svg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+
+#oxygen-img{
+
+	background: url(./assets/img/oxygen.svg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
