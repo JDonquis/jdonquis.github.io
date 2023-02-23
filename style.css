@@ -232,7 +232,7 @@ animation: moveleft 3.2s ease-out;
 
 	content:"\f0f2";
 	font-family: "Font Awesome 5 Free";
-	font-weight:200;
+	font-weight:900;
 	font-size: 30px;
 	position: absolute;
 	bottom:-50px;
@@ -329,14 +329,25 @@ animation: moveleft 3.2s ease-out;
 }
 
 .circle{
-
+	z-index: -1;
 	height: 1200px;
 	width: 1200px;
-	background: linear-gradient(90deg,rgba(106,240,219,1) 0% ,rgba(85,212,217,1) 20%, rgba(84,211,217,1) 36%, rgba(77,202,217,1) 49%, rgba(72,195,217,1) 62%,rgba(27,136,213,1) 80%) ; 
+	background: linear-gradient(90deg, rgba(27,136,213,1) 0% , rgba(72,195,217,1)20%, rgba(77,202,217,1) 36%, rgba(84,211,217,1) 49%, rgba(85,212,217,1) 62%,rgba(106,240,219,1) 80%) ; 
 	border-radius: 100%;
 	position: relative;
 	bottom: 250px;
 	left: 900px;
+}
+
+.circle-left{
+	z-index: -1;
+	height: 1200px;
+	width: 1200px;
+	background: linear-gradient(90deg, rgba(27,136,213,1) 0% , rgba(72,195,217,1)20%, rgba(77,202,217,1) 36%, rgba(84,211,217,1) 49%, rgba(85,212,217,1) 62%,rgba(106,240,219,1) 80%) ; 
+	border-radius: 100%;
+	position: absolute;
+	top: 0px;
+	left: -800px;
 }
 
 .list-tecno{
