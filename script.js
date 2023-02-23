@@ -16,3 +16,25 @@ li.forEach(el =>{
 	})
 
 })
+
+let aboutme = false;
+document.addEventListener("scroll", (event) => {
+  let p = window.scrollY;
+
+
+  if(p >= 500 && aboutme == false)
+  {
+  	document.querySelector('#about-me-text-section').classList.add('opacity-activate');
+  	document.querySelector('#about-me-image-section').classList.add('opacity-activate');
+
+  	if (p>= 800){
+		document.querySelector('#about-me-tecno-section').classList.add('opacity-activate');  	 
+ 		aboutme = true;
+  	}
+
+
+
+  }
+  console.log(p);
+ 
+});
