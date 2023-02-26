@@ -23,16 +23,19 @@
 
 			 <ul class="navbar-nav d-flex flex-row justify-content-en align-items-center">
 		        <li class="nav-item" id="start-link">
-		          <a class="nav-link active" aria-current="page" href="#">Start</a>
+		          <a class="nav-link" aria-current="page" href="#hero">Start</a>
 		        </li>
 		        <li class="nav-item" id="about-me-link">
-		          <a class="nav-link" href="#">About me</a>
+		          <a class="nav-link" href="#about-me">About me</a>
 		        </li>
 		        <li class="nav-item" id="projects-link">
-		          <a class="nav-link" href="#">Projects</a>
+		          <a class="nav-link" href="#projects">Projects</a>
 		        </li>
 		        <li class="nav-item" id="contact-link">
-		          <a class="nav-link disabled">Contact</a>
+		          <a class="nav-link" href="#contact">Contact</a>
+		        </li>
+		        <li class="nav-item" id="resume-link">
+		          <a class="nav-link" href="#">Resume</a>
 		        </li>
 		      </ul>
 
@@ -61,14 +64,13 @@
 				</div>
 				<div id="line-right"></div>
 			</div>
-
 		</section>
 
 		<div class=" container-custom box-line-bottom p-0">
 			<div id="line-bottom"></div>
 		</div>
 			
-		<section class="container-custom mt-edit">
+		<section class="container-custom mt-100px" id="about-me">
 			
 			<div class="row">
 				<div class="col-sm-6" id="about-me-text-section">
@@ -79,8 +81,8 @@
 						</p>
 					</div>
 				</div>
-				<div class="col-sm-6" id="about-me-image-section">
-					<div class="border-image">
+				<div class="col-sm-6  d-flex justify-content-end" id="about-me-image-section">
+					<div class="border-image d-flex justify-content-end">
 						<div class="image-about"></div>
 						
 					</div>
@@ -92,13 +94,13 @@
 				<div id="about-me-tecno-section"> 
 					<h3>I've been working with: </h3>
 					<ul class="list-tecno p-0">
-						<li id="laravel">Laravel</li>
-						<li id="wordpress">Wordpress</li>
-						<li id="vuejs">VueJs</li>
-						<li id="elementor">Elementor</li>
-						<li id="oxygen">Oxygen Builder</li>
-						<li id="bootstrap">Bootstrap</li>
-						<li id="tailwind">Tailwind</li>	
+						<li class="li-content"id="laravel">Laravel</li>
+						<li class="li-content"id="wordpress">Wordpress</li>
+						<li class="li-content"id="vuejs">VueJs</li>
+						<li class="li-content"id="elementor">Elementor</li>
+						<li class="li-content"id="oxygen">Oxygen Builder</li>
+						<li class="li-content"id="bootstrap">Bootstrap</li>
+						<li class="li-content"id="tailwind">Tailwind</li>	
 					</ul>
 				</div>
 				<div class="box-content-tecno d-none justify-content-center flex-column align-items-center" id="laravel-content">
@@ -144,23 +146,79 @@
 				</div>
 
 			</div>
-
-
 		</section>
 
 		<div class=" container-custom box-line-bottom p-0">
 			<div id="line-bottom-2"></div>
 		</div>
-		<section class="container-custom mt-edit">
-			<h3>Projects</h3>
 
+		<section class="container-custom mt-100px position-relative" id="projects">
+			<h3 id="title-project-section">Projects</h3>
+
+			<div class="container-fluid">
+
+				<div class="row card-project my-5" id="villadonq">
+					<div class="col-6" id="image-villadonq"></div>
+					<div class="col-6 d-flex justify-content-end position-relative box-content-project">
+						<h4 class="">VillaDonq Web App</h4>
+						<div class="position-absolute content-card-project"><p>Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Omnis illum ipsum sit officia totam earum obcaecati consequatur illo, laborum nisi ipsam. Architecto cum atque animi vel deleniti, exercitationem voluptatem qui.
+						Asperiores perspiciatis repellat facere atque in distinctio vel, inventore quasi numquam exercitationem eaque accusamus temporibus iure non nemo commodi quae nobis deleniti error ad corrupti? Magnam dolore ratione reprehenderit placeat.</p></div>
+					
+					</div>
+				</div>
+
+				<div class="row card-project my-edit" id="maucake">
+					<div class="col-6" id="image-villadonq"></div>
+					<div class="col-6 d-flex justify-content-start position-relative box-content-project">
+						<h4 class="">Maucake CMS </h4>
+						<div class="position-absolute content-card-project-right"><p>Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Omnis illum ipsum sit officia totam earum obcaecati consequatur illo, laborum nisi ipsam. Architecto cum atque animi vel deleniti, exercitationem voluptatem qui.
+						Asperiores perspiciatis repellat facere atque in distinctio vel, inventore quasi numquam exercitationem eaque accusamus temporibus iure non nemo commodi quae nobis deleniti error ad corrupti? Magnam dolore ratione reprehenderit placeat.</p></div>
+					
+					</div>
+				</div>
+
+				<div class="row card-project my-edit" id="facilito">
+					<div class="col-6" id="image-villadonq"></div>
+					<div class="col-6 d-flex justify-content-end position-relative box-content-project">
+						<h4 class="">Facilito ECommerce</h4>
+						<div class="position-absolute content-card-project"><p>Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Omnis illum ipsum sit officia totam earum obcaecati consequatur illo, laborum nisi ipsam. Architecto cum atque animi vel deleniti, exercitationem voluptatem qui.
+						Asperiores perspiciatis repellat facere atque in distinctio vel, inventore quasi numquam exercitationem eaque accusamus temporibus iure non nemo commodi quae nobis deleniti error ad corrupti? Magnam dolore ratione reprehenderit placeat.</p></div>
+					
+					</div>
+				</div>
+
+				<div class="row card-project my-edit" id="api">
+					<div class="col-6" id="image-villadonq"></div>
+					<div class="col-6 d-flex justify-content-start position-relative box-content-project">
+						<h4 class="">API</h4>
+						<div class="position-absolute content-card-project-right"><p>Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Omnis illum ipsum sit officia totam earum obcaecati consequatur illo, laborum nisi ipsam. Architecto cum atque animi vel deleniti, exercitationem voluptatem qui.
+						Asperiores perspiciatis repellat facere atque in distinctio vel, inventore quasi numquam exercitationem eaque accusamus temporibus iure non nemo commodi quae nobis deleniti error ad corrupti? Magnam dolore ratione reprehenderit placeat.</p></div>
+					
+					</div>
+				</div>
+			
+			</div>
 
 			<div class="circle"></div>
 		</section>
 
+		<section class="container-custom mt-100px" id="contact">
+			<h2 class="w-100 text-center">Let's to work!</h2>
+			<div class="w-100 d-flex justify-content-center flex-column align-items-center">
+
+				<p class="w-50 text-center">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Libero consequatur animi quae rem autem tenetur expedita reiciendis aliquid minima aspernatur! Cum blanditiis doloremque provident amet voluptate eveniet quidem voluptatem a?</p>
+			
+				<button class="btn btn-outline-primary">Contact me</button>
+			</div>
+		</section>
+
 
 	</main>
-	<footer></footer>
+	<footer>
+		<section class="container-custom mt-100px">
+			<p class="w-100 text-center">Built by Juan Donquis</p>	
+		</section>
+	</footer>
 
 
 
