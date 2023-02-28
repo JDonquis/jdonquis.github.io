@@ -53,6 +53,7 @@ a{
 
 }
 
+span{ color:#1c89d5; font-weight:bold }
 
 
 /*---------------------------- navbar ------------------------------------------*/
@@ -306,10 +307,10 @@ animation: moveleft 3.2s ease-out;
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 300px;
-	height: 300px;
+	min-height: 300px;
 	position: relative;
-	bottom: 20px;
-	right: 20px;
+	bottom: 6%;
+	right: 6%;
 	border-radius: 16px;
 }
 
