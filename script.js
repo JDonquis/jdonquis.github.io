@@ -3,6 +3,7 @@ var status_menu = true;
 var before_select = null;
 var link_before_select = null;
 
+//Check if there li active or not
 function check_status_menu()
 {
 	let li = document.querySelectorAll('.li-content');
@@ -17,6 +18,7 @@ for(let el of li ){
 return true;
 }
 
+//Add or not mouseenter and mouseleave to menu
 function get_menu(){
 let li = document.querySelectorAll('.list-tecno>li');
 
@@ -62,7 +64,6 @@ document.addEventListener('click',e=>{
 				  link_before_select = e.target;
 			  }
 			  else{
-
 			  	before_select.classList.remove('d-flex','focus');
 			  	before_select.classList.add('d-none');
 			  	link_before_select.classList.remove('active');
@@ -71,6 +72,8 @@ document.addEventListener('click',e=>{
 				  document.querySelector(`#${e.target.id}-content`).classList.add('d-flex','focus');
 				  status_menu = check_status_menu();
 				  get_menu();
+				  before_select = document.querySelector(`#${e.target.id}-content`);
+				  link_before_select = e.target;
 
 			  }
 		}
@@ -89,7 +92,7 @@ document.addEventListener('click',e=>{
 
 let aboutme = false;
 let projects = false;
-// let line_about = false;
+
 
 document.addEventListener("scroll", (event) => {
   let p = window.scrollY;
@@ -130,10 +133,26 @@ document.addEventListener("scroll", (event) => {
   	if(p>=2690)
   			document.querySelector('#facilito').classList.add('opacity-activate');
 
-  		if(p>=2820)
+  	if(p>=2820)
   			document.querySelector('#api').classList.add('opacity-activate');
   	 
   }
 
  
 });
+
+
+let h = document.querySelector(".hamburger");
+let navMobile = document.querySelector(".navbar-nav-mobile");
+let body = document.querySelector("body");
+let html = document.querySelector("html");
+console.log(navMobile);
+h.addEventListener("click",e => {
+
+	h.classList.toggle("is-active");
+	navMobile.classList.toggle("mobile-active");
+	body.classList.toggle("body-paused");
+	html.classList.toggle("body-paused");
+
+
+})
