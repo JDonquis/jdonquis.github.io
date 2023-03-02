@@ -153,6 +153,17 @@
 	.box-icons{ padding:20px; }
 
 	#row-icons-email{ flex-direction:column-reverse !important; }
+
+	.list-tecno>li:hover{
+
+		background: transparent;
+		color: #212529;
+	}
+
+	.active{
+		color: white !important;
+		background-color:rgba(84,211,217,1) !important;
+	}
 }
 
 
