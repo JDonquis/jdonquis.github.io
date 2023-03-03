@@ -143,7 +143,7 @@ nav{
 
 .image{
 
-	background: url(./assets/img/perfil.jpg);
+	background: url(./assets/img/perfil.png);
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -320,7 +320,7 @@ animation: moveleft 3.2s ease-out;
 .image-about{
 
 	background-color: whitesmoke;
-	background-image:url(./assets/img/perfil.jpg);
+	background-image:url(./assets/img/perfil.png);
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
