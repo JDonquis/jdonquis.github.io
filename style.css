@@ -463,9 +463,20 @@ animation: moveleft 3.2s ease-out;
 
 /*------------------------------------------------------ Projects ---------------------------------------------*/
 
+
 #image-villadonq{
 
 	background: url(./assets/img/villadonq.png);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 300px;
+	border-radius: 8px;
+}
+
+#image-sysver{
+
+	background: url(./assets/img/sysver2.png);
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;

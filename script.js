@@ -128,13 +128,14 @@ document.addEventListener("scroll", (event) => {
   			document.querySelector('#villadonq').classList.add('opacity-activate');
 
   	if(p>=2460)
-  			document.querySelector('#maucake').classList.add('opacity-activate');
+  		document.querySelector('#sysver').classList.add('opacity-activate');
+  			
 
   	if(p>=2690)
   			document.querySelector('#facilito').classList.add('opacity-activate');
 
   	if(p>=2820)
-  			document.querySelector('#api').classList.add('opacity-activate');
+  			document.querySelector('#maucake').classList.add('opacity-activate');
   	 
   }
 
