@@ -143,7 +143,7 @@ nav{
 
 .image{
 
-	background: url(./assets/img/perfil.png);
+	background: url(./assets/img/perfil.webp);
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -320,7 +320,7 @@ animation: moveleft 3.2s ease-out;
 .image-about{
 
 	background-color: whitesmoke;
-	background-image:url(./assets/img/perfil.png);
+	background-image:url(./assets/img/perfil.webp);
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -466,7 +466,7 @@ animation: moveleft 3.2s ease-out;
 
 #image-villadonq{
 
-	background: url(./assets/img/villadonq.png);
+	background: url(./assets/img/villadonq.webp);
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -476,7 +476,7 @@ animation: moveleft 3.2s ease-out;
 
 #image-sysver{
 
-	background: url(./assets/img/sysver2.png);
+	background: url(./assets/img/sysver2.webp);
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
