@@ -1,0 +1,24 @@
+#box-title-brand{
+	animation: go-down 3.4s ease-out;
+}
+
+#start-link{
+	animation: go-down 3.5s ease-out;
+}
+
+#about-me-link{
+	animation: go-down 3.6s ease-out;
+}
+
+#projects-link{
+	animation: go-down 3.7s ease-out;
+}
+
+#contact-link{
+	animation: go-down 3.8s ease-out;
+}
+
+#resume-link{
+
+	animation: go-down 3.9s ease-out;
+}
