@@ -212,15 +212,24 @@ footer{
 	font-family: 'Montserrat';
 
 }
+#box-card-image
+{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background: var(--colorBlueLight);
+
+}
 .image{
 
 	background: url(../img/perfil.webp);
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 150px;
-	width: 150px;
+	height: 100%;
+	width: 100%;
 	border-radius: 50%;
+
 }
 .introduce-card{
 	width: 50%;
