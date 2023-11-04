@@ -143,17 +143,24 @@
 // });
 
 
+const width = window.innerWidth;
 
-const mediaQuery = window.matchMedia('(max-width: 768px)');
-
-mediaQuery.addEventListener('change', function() {
+// Si el ancho es menor de 768px
+if (width < 768) {
+  // Obtener todos los elementos con el atributo aria-hidden
   const elements = document.querySelectorAll('[aria-hidden]');
 
+  // Iterar sobre los elementos
   for (const element of elements) {
-    if (mediaQuery.matches) {
-      element.setAttribute('aria-hidden', 'false');
-    } else {
+    // Obtener el valor actual del atributo aria-hidden
+    const hidden = element.getAttribute('aria-hidden');
+
+    // Si el valor es false, establecerlo en true
+    if (hidden === 'false') {
       element.setAttribute('aria-hidden', 'true');
+    } else {
+      // Si el valor es true, establecerlo en false
+      element.setAttribute('aria-hidden', 'false');
     }
   }
-});
+}
