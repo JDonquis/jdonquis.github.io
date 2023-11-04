@@ -1,6 +1,11 @@
 
 /*------------------------------------------------------------- Mobile ----------------------------*/
 
+@media (max-width:522px)
+{
+	#box-card-image{ display:none; }
+
+}
 
 @media (max-width:767px )
 {
@@ -13,6 +18,15 @@
 		transform: translateY(0px);
 		transition: transform ease-out .5s;
 	 }
+
+	 .box-introduce{
+	 	justify-content:center;
+	 }
+
+	 .introduce-card{
+		min-width: 100%;
+	}
+
 }
 
 /*------------------------------------------------------------- Tablets ----------------------------*/
@@ -22,6 +36,7 @@
 	.hamburger{ display:none; }
 	.navbar-nav{ display:flex }	
 	.navbar-nav-mobile{ display:none; }
+
 }
 
 /*------------------------------------------------------------- PCs ----------------------------*/

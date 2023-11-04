@@ -5,7 +5,7 @@
 --bodyColorTransparent: rgb(250, 250, 250,.95);
 --colorGreen:#40ffdc;
 --colorBlueLight:#00a9d4;
---colorBlueMedium:#1c3166;
+--colorBlueMedium:#2596be;
 --colorBlueDark:#240047;
 --colorDark:#1c0021;
 }
@@ -184,29 +184,37 @@ footer{
 
 
 
-/*---------------------------- Hero ------------------------------------------*/
+/*---------------------------- Home ------------------------------------------*/
 
-#hero{
+#home{
 
-	padding-top: 10%;
+	padding-top: 100px;
+	padding-left: 10px;
+	padding-right:10px ;
 }
 
 #type-text{
 
  	width: 100%;
+ 	font-size: 18pt;
  	border-right: 5px solid;
- 	color: #1E292B;
+ 	color: var(--colorBlueDark);
  	white-space: nowrap;
  	overflow: hidden;
  	letter-spacing: 3px;
  	animation: 
- 		typing 2s steps(17),
- 		cursor .4s step-end infinite alternate;
+ 		typing 1.5s steps(17),
+ 		cursor .3s step-end infinite alternate;
 }
+.box-typed-text{
 
+	display: inline-block;
+	font-family: 'Montserrat';
+
+}
 .image{
 
-	background: url(./assets/img/perfil.webp);
+	background: url(../img/perfil.webp);
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -215,26 +223,80 @@ footer{
 	border-radius: 50%;
 }
 .introduce-card{
-	position: relative;
-	width: 650px;
+	width: 50%;
+	min-width: 505px;
 	height: 300px;
 	padding: 30px;
-	/* From https://css.glass */
-background: rgba(255, 255, 255, 0.2);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(6px);
-border: 1px solid rgba(255, 255, 255, 0.3);
-animation: moveleft 3.2s ease-out;
+	border-radius: 16px;
+ background: #fafafa;
+  box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+
 }
 
+.row-content-photo{
 
-
-#name{
-
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.card-info
+{
+	font-size: 15pt;
+	padding-top: 10px;
+	font-family: Roboto;
 	font-weight: 500;
+	color:var(--colorBlueDark);
 }
+
+.row-card-links{
+	display: flex;
+	flex-direction: row;
+	padding-top: 30px;
+}
+
+.row-card-links ul {
+	
+	display:flex; 
+	flex-direction: row;
+	gap: 20px;
+
+}
+
+.social-link
+{	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	color: var(--colorBlueMedium);
+}
+
+.card-skills-resume
+{
+	min-width: 350px;
+}
+.box-introduce{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	position: relative;
+	padding-top:30px ;
+}
+
+.title-card{
+
+	font-size: 17pt;
+	font-family: Roboto;
+	font-weight: 700;
+	color: var(--colorBlueMedium);
+}
+
 #line-right{
 
 	position: absolute;
@@ -408,13 +470,13 @@ animation: moveleft 3.2s ease-out;
 
 .circle-left{
 	z-index: -1;
-	height: 1200px;
-	width: 1200px;
+	height: 800px;
+	width: 800px;
 	background: linear-gradient(90deg, rgba(27,136,213,1) 0% , rgba(72,195,217,1)20%, rgba(77,202,217,1) 36%, rgba(84,211,217,1) 49%, rgba(85,212,217,1) 62%,rgba(106,240,219,1) 80%) ; 
 	border-radius: 100%;
 	position: absolute;
-	top: 0px;
-	left: -50%;
+	top: 10%;
+	left: -30vw;
 }
 
 .list-tecno{
