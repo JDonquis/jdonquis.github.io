@@ -156,6 +156,7 @@ ScrollReveal().reveal('.menu-nav',{delay:0, easing:'ease-in-out',duration:900,or
 // ScrollReveal().reveal('.circle-left',{interval:200, easing:'ease-in-out',duration:900,origin:'left'});
 ScrollReveal().reveal('.box-typed-text',{interval:200, easing:'ease-in-out',duration:700,origin:'right'});
 ScrollReveal().reveal('.introduce-card',{delay:1000, easing:'ease-in-out',duration:700,origin:'right'});
+ScrollReveal().reveal('.card-skills-resume',{delay:1000, easing:'ease-in-out',duration:700,origin:'right'});
 ScrollReveal().reveal('.social-link',{delay:1200, easing:'ease-in-out',duration:700,origin:'bottom'});
 
 

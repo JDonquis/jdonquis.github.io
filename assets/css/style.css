@@ -239,7 +239,7 @@ footer{
 	padding: 30px;
 	border-radius: 16px;
  background: #fafafa;
-  box-shadow: 15px 15px 30px #bebebe,
+  box-shadow: 15px 15px 30px #dfdbdb,
              -15px -15px 30px #ffffff;
 	border: 1px solid rgba(255, 255, 255, 0.3);
 
@@ -288,7 +288,9 @@ footer{
 
 .card-skills-resume
 {
+	width: 100%;
 	min-width: 350px;
+	max-width: 500px;
 }
 .box-introduce{
 	width: 100%;
