@@ -21,7 +21,7 @@
 		transition: transform ease-out .5s;
 	 }
 
-	 .box-introduce{
+	 .row{
 	 	justify-content:center;
 	 }
 
@@ -38,7 +38,7 @@
 	.hamburger{ display:none; }
 	.navbar-nav{ display:flex }	
 	.navbar-nav-mobile{ display:none; }
-	.box-introduce{
+	.row{
 	 	justify-content:center;
 	 	gap: 20px;
 
@@ -55,7 +55,7 @@
 	.hamburger{ display:none; }
 	.navbar-nav{ display:flex }	
 	.navbar-nav-mobile{ display:none; }
-	.box-introduce{
+	.row{
 	 	justify-content:center;
 	 	gap: 20px;
 
