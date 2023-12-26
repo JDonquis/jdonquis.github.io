@@ -217,13 +217,11 @@ footer{
 	width: 150px;
 	height: 150px;
 	border-radius: 50%;
-	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-
-
+	border: 1px solid var(--colorBlueMedium);
 }
 .image{
 
-	background: url(../img/perfil.webp);
+	background: url(../img/profile.webp);
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -238,10 +236,10 @@ footer{
 	height: 300px;
 	padding: 30px;
 	border-radius: 16px;
- background: #fafafa;
+ background: #fafafa;/*
   box-shadow: 15px 15px 30px #dfdbdb,
-             -15px -15px 30px #ffffff;
-	border: 1px solid rgba(255, 255, 255, 0.3);
+             -15px -15px 30px #ffffff;*/
+	border: 1px solid var(--colorBlueMedium);
 
 }
 
@@ -282,8 +280,8 @@ footer{
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
-	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-	color: var(--colorBlueMedium);
+	color: var(--bodyColor);
+	background: var(--colorBlueMedium);
 }
 
 .card-skills-resume

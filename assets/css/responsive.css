@@ -7,8 +7,10 @@
 
 }
 
-@media (max-width:767px )
-{
+@media (max-width:768px )
+{	
+	.slider{display: none;}
+
 	.hamburger{ display:block; }
 	.navbar-nav-mobile{ display:flex; }
 	.navbar-nav{ display:none; }	
@@ -31,11 +33,60 @@
 
 /*------------------------------------------------------------- Tablets ----------------------------*/
 
-@media (max-width:1279px ) and (min-width: 768px)
+@media (max-width:1279px ) and (min-width: 900px)
 {
 	.hamburger{ display:none; }
 	.navbar-nav{ display:flex }	
 	.navbar-nav-mobile{ display:none; }
+	.box-introduce{
+	 	justify-content:center;
+	 	gap: 20px;
+
+	 }
+	 .introduce-card{
+		max-width: 600px;
+
+	}
+
+}
+
+@media (max-width:900px ) and (min-width: 768px)
+{
+	.hamburger{ display:none; }
+	.navbar-nav{ display:flex }	
+	.navbar-nav-mobile{ display:none; }
+	.box-introduce{
+	 	justify-content:center;
+	 	gap: 20px;
+
+	 }
+	 .introduce-card{
+		max-width: 600px;
+		width: 100%;
+
+	}
+
+	.slide img{
+
+		width: 600px !important;
+	}
+	.slide
+	{
+		min-width:600px !important;
+	}
+
+	.slider--inner
+	{
+		width: 600px;
+	}
+	.slider
+	{
+		width: 100%;
+	}
+	.card-skills-resume
+	{
+		max-width:600px;
+	}
 
 }
 

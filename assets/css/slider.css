@@ -2,8 +2,8 @@
 {
 	aspect-ratio: 16/9;
 	object-fit: cover;
-	width: 100%;
 	min-height: 300px;
+	width: 500px;
 }
 
 .slide h3
@@ -22,12 +22,17 @@
 .slide{ min-width:500px; height:100%; }
 
 .slider--inner
-{
+{	
+	width: 500px;
 	display: flex;
+	align-items: center;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	height: 300px;
 	transition: transform .7s ease-in;
+	border-radius: 16px;
+	padding: 0;
+
 }
 
 .slider{
@@ -35,4 +40,8 @@
 	overflow: hidden;
 	height: 300px;
 	width: 100%;
+	border-radius: 16px;
+	border: 1px solid var(--colorBlueMedium);
+
+
 }
