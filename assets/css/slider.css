@@ -16,11 +16,11 @@
 }
 
 .slide:hover{
-	cursor: pointer;
+/*	cursor: pointer;*/
 }
 
 
- .slide:hover .text-slide-box {
+ .text-slide-box {
  	position: relative;
  	top: -40%;
  	left: 0px;
