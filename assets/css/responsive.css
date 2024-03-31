@@ -1,68 +1,166 @@
 
 /*------------------------------------------------------------- Mobile ----------------------------*/
 
-@media (max-width:522px)
+@media (max-width: 767px)
 {
-	#box-card-image{ display:none; }
-
-}
-
-@media (max-width:768px )
-{	
-	.slider{display: none;}
-
 	.hamburger{ display:block; }
 	.navbar-nav-mobile{ display:flex; }
-	.navbar-nav{ display:none; }	
-
+	.navbar-nav{ display:none; }
+	.box-typed-text{ width: 100%; display:flex;  justify-content:center; }
 	.navbar-nav-mobile.mobile-active
 	{ 	
 		transform: translateY(0px);
 		transition: transform ease-out .5s;
-	 }
-
-	 .row{
-	 	justify-content:center;
-	 	gap: 20px;
-	 	
-	 }
-
-	 .introduce-card{
-		min-width: 100%;
 	}
 
+	.introduce-card
+	{
+		width: 100%;
+		height: 480px;
+	}
+
+	.card-skills-resume
+	{
+		width: 100%;
+		height: 480px;
+	}
+
+	.slider
+	{
+		height: 480px;
+
+	}
+	
+	.slider--inner
+	{	
+		width: 100vw;
+		height: 480px;
+	}
+
+	.slide img
+	{
+		aspect-ratio: 16/9;
+		object-fit: cover;
+		min-height: 480px;
+		width: 100vw;
+	}
+
+
+
+
+	.slide
+	{ 
+		width:100vw;
+		height:480px; 
+	}
+
+	.row{
+
+  	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+	}
+
+	.row-about-me
+	{
+  	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+	}
+
+	.row-card-links
+	{
+		padding-left: 0px;
+		justify-content: center;
+	}
+
+	.box-project
+	{
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
+	  margin-bottom: 200px;
+	}
+	.aside-project
+	{
+		width: 100vw;
+		display: flex;
+		padding: 10px;
+		justify-content: center;
+	}
+	.title-sections
+	{
+		text-align:center;	
+	}
+	.box-btn-project 
+	{
+	  width: 100%;
+	  height: 480px;
+
+	}
+
+	.box-image-project img
+	{
+	  height: 480px;
+	  width: 100%;
+	}
+
+	.about-me-image-box
+	{
+		width: 300px;
+		height: 300px;
+
+	}
+
+
 }
+
+
 
 /*------------------------------------------------------------- Tablets ----------------------------*/
 
-@media (max-width:1279px ) and (min-width: 900px)
+@media (min-width: 768px) and (max-width: 1024px) 
 {
 	.hamburger{ display:none; }
 	.navbar-nav{ display:flex }	
 	.navbar-nav-mobile{ display:none; }
-	.row{
-	 	justify-content:center;
-	 	gap: 20px;
-
-	 }
-	 .introduce-card{
-		max-width: 600px;
-
+	.box-typed-text{ width: 100%; display:flex;  justify-content:center; }
+	.box-project
+	{
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
 	}
 
+	.aside-project
+	{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.title-sections
+	{
+		text-align: center;
+	}
+	
 }
+
+
+
+
+
 
 @media (max-width:900px ) and (min-width: 768px)
 {
-	.hamburger{ display:none; }
+	/*.hamburger{ display:none; }
 	.navbar-nav{ display:flex }	
-	.navbar-nav-mobile{ display:none; }
-	.row{
+	.navbar-nav-mobile{ display:none; }*/
+	/*.row{
 	 	justify-content:center;
 	 	gap: 20px;
 
-	 }
-	 .introduce-card{
+	 }*/
+	/* .introduce-card{
 		max-width: 600px;
 		width: 100%;
 
@@ -89,7 +187,7 @@
 	{
 		max-width:600px;
 	}
-
+*/
 }
 
 /*------------------------------------------------------------- PCs ----------------------------*/

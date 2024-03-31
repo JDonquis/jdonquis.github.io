@@ -23,8 +23,8 @@
 	<!-- Custom CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/hamburger.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/slider.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 
 
 </head>
@@ -73,7 +73,7 @@
 				          <a class="nav-link" href="#about-me">About me</a>
 				        </li>
 				        <li class="nav-item" id="projects-link">
-				          <a class="nav-link" href="#projects-mobile">Projects</a>
+				          <a class="nav-link" href="#projects">Projects</a>
 				        </li>
 				        <li class="nav-item" id="contact-link">
 				          <a class="nav-link" href="#contact-mobile">Contact</a>
@@ -93,7 +93,9 @@
 		
 		<section class="container-general" id="home">
 			<div class="box-typed-text">
-				<h1 id="type-text" >Hi, I'm Juan Donquis</h1>
+				<div class="box-typed-text-inner">
+					<h1 id="type-text" >Hi, I'm Juan Donquis</h1>
+				</div>
 			</div>
 			<div class="row">
 				<div class="introduce-card mt-4">
@@ -114,19 +116,19 @@
 						<ul >
 							<li>	
 
-								<a href="https://www.linkedin.com/in/jdonquis/" class="social-link">
+								<a href="https://www.linkedin.com/in/jdonquis/" target="_blank" class="social-link">
 									<i class="fa-brands fa-linkedin"></i>
 								</a>
 							</li>
 
 							<li>
-								<a href="https://github.com/JDonquis" class="social-link">
+								<a href="https://github.com/JDonquis" target="_blank" class="social-link">
 									<i class="fa-brands fa-github"></i>
 								</a>
 							</li>
 							<li>
-								<a target="_parent"  href="mailto:juandoqnuis07@gmail.com" class="social-link">
-									<i class="fa-solid fa-envelope"></i>
+								<a target="_parent"  href="https://www.youtube.com/@JuanDonquis" class="social-link">
+									<i class="fa-brands fa-youtube"></i>
 								</a>
 							</li>		 
 						</ul>
@@ -148,7 +150,7 @@
 								</div>
 							</div>
 							<div class="slide">
-								<img src="./assets/img/sysver2.webp" alt="Image of SysVer Project">
+								<img src="./assets/img/sysver.webp" alt="Image of SysVer Project">
 								<div class="text-slide-box">
 									<h3>SYSVER</h3>
 								</div>
@@ -162,7 +164,7 @@
 		</section>
 
 		<section class="container-general mt-50px" id="about-me">
-			<div class="row">
+			<div class="row-about-me">
 				<div class="p-10px">
 					<h2 class="title-sections">About me</h2>
 					<div class="max-width-560px box-about-me-text ">
@@ -174,7 +176,7 @@
 							After 2020 I started a University project <span>VillaDonq</span>, where I took my first steps on Laravel, then in 2022 started <span>SYSVER</span> a project aimed to all "Gran Bases de Misiones de Paz" in Venezuela, usign <span>Laravel</span> for the API Back-end and <span>React</span> for the Front-end. In 2023, I started  working as a developer for the Deparment of Health of Falcon, where I currently work on <span>SISMED</span>, a system for managing the inventories of all hospitals in the state</p>
 
 						<p>
-						<span>I dedicated myself to improve my technique and skills to provide the best service and great works!</span>
+						<span>I dedicated myself to improve my technique and skills to provide the best service</span>
 
 						</p>
 
@@ -187,138 +189,122 @@
 				</div>
 			</div>
 		</section>
-<!-- 
-		<section class="container-general mt-50px" id="projects">
-			<div class="row">
-				<div class="p-10px">
+
+		<section class="container-general mt-50px overflow-x-hidden" id="projects">
+			<div class="row-2">
+				<div class="p-10px container-projects">
 					<h2 class="title-sections">Projects</h2>
-					<div class="box-project-text">
+					<div class="box-project">
 						<article class="article-project">
 							<h3 class="title-article">SISMED</h3>
 							<div class="article-text-project">
-								<h4>Goals</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<p>Local inventory system designed specifically for the Health Secretary of Falcon state. Its primary goal is to enhance data visualization and ensure the integrity of information. By centralizing inventory data and implementing visual representation techniques, the system enables the Health Secretary to easily monitor stock levels and make informed decisions regarding resource allocation.</p>
 							</div>
 							<div class="article-text-project">
-								<h4>Difficulties</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<h4>Work Experience</h4>
+								<p>As a backend programmer, I achieved the proper balance of inventory inputs and outputs, as well as the correct visualization of inventory movements. Additionally, I implemented other features such as alerts for low stock and the display of general system statistics.</p>
 							</div>
 							<div class="article-text-project">
 								<h4>Tecnologies</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<ul class="list-tecnologies">
+									<li class="li-tecno">
+										Laravel 10
+									</li>
+									<li class="li-tecno">
+										React
+									</li>
+									<li class="li-tecno">
+										PostgreSQL
+									</li>
+								</ul>
 							</div>
 						</article>
 						<aside class="aside-project">
-							<div class="slider">
-						<div class="slider--inner">
-							<div class="slide">
-								<img src="./assets/img/villadonq.webp" alt="Image of VillaDonq Project">
-								<div class="text-slide-box">
-									<h3>VILLADONQ</h3>
-								</div>
-							</div>
-							<div class="slide">
-								<img src="./assets/img/sismed.webp" alt="Image of SISMED Project">
-								<div class="text-slide-box">
-									<h3>SISMED</h3>
-								</div>
-							</div>
-							<div class="slide">
-								<img src="./assets/img/sysver2.webp" alt="Image of SysVer Project">
-								<div class="text-slide-box">
-									<h3>SYSVER</h3>
-								</div>
-							</div>
 							
-						</div>
-					</div>
+							<div class="box-image-project">
+								<img src="./assets/img/sismed.webp" alt="Image of SISMED Project">
+								<div class="box-btn-project">
+									<a target="_blank" href="https://www.youtube.com/watch?v=ShuEci7_5gk" class="btn-project">Watch Video</a>
+								</div>
+							</div>
+															
 						</aside>
 					</div>
-
-						<article>
+					<div class="box-project">
+						<article class="article-project">
 							<h3 class="title-article">SYSVER</h3>
 							<div class="article-text-project">
-								<h4>Goals</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<p>The local system aims to ensure the efficient management of administrative operations within the "Gran Base de Misiones de Paz Y Vida" in Falcon state. It is specifically designed to streamline and optimize the day-to-day administrative tasks carried out within the organization. By automating repetitive tasks and implementing standardized procedures, the system reduces manual effort, minimizes errors, and enhances overall operational efficiency.</p>
 							</div>
 							<div class="article-text-project">
-								<h4>Difficulties</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<h4>Work Experience</h4>
+								<p>SYSVER is a highly comprehensive project where I developed a module for managing user payments, account statuses, and debts. Additionally, I created a module to handle attendance for various departments within the organization's base. The project also includes functionalities for personnel management, department management, and provides statistical analysis of the most relevant system data.</p>
 							</div>
 							<div class="article-text-project">
 								<h4>Tecnologies</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<ul class="list-tecnologies">
+									<li class="li-tecno">
+										Laravel 8
+									</li>
+									<li class="li-tecno">
+										React
+									</li>
+									<li class="li-tecno">
+										MySQL
+									</li>
+								</ul>
 							</div>
 						</article>
-						<article>
+						<aside class="aside-project">
+							
+							<div class="box-image-project">
+								<img src="./assets/img/sysver.webp" alt="Image of SYSVER Project">
+								<div class="box-btn-project">
+									<a href="#" class="btn-project">Watch Video</a>
+								</div>
+							</div>
+															
+						</aside>
+					</div>
+					<div class="box-project">
+						<article class="article-project">
 							<h3 class="title-article">VILLADONQ</h3>
 							<div class="article-text-project">
-								<h4>Goals</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<p>VILLADONQ is specifically designed to meet the needs of primary and secondary educational institutions. Its main objective is to efficiently manage all administrative processes of the institution, simplifying tasks such as student registration, schedule management, enrollment administration, and attendance tracking. </p>
 							</div>
 							<div class="article-text-project">
-								<h4>Difficulties</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<h4>Work Experience</h4>
+								<p>During my time at VillaDonq, I played a vital role in developing several key modules, including grade management, attendance tracking, evaluation plan creation, academic periods, and enrollment periods. One of the major challenges we faced in this project was ensuring the accurate handling of academic period dates and evaluation plans. As the system heavily relied on event tracking, it was crucial for us to implement a robust structure that efficiently managed these aspects.
+							</p>
 							</div>
 							<div class="article-text-project">
 								<h4>Tecnologies</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<ul class="list-tecnologies">
+									<li class="li-tecno">
+										Laravel 7
+									</li>
+									<li class="li-tecno">
+										JQuery and JavaScript
+									</li>
+									<li class="li-tecno">
+										MySQL
+									</li>
+								</ul>
 							</div>
 						</article>
-
-				</div>
-				<div class="flex-box-center">
-					<div class="about-me-image-box">
-						<img src="./assets/img/information.svg" alt="">
+						<aside class="aside-project">
+							
+							<div class="box-image-project">
+								<img src="./assets/img/villadonq.webp" alt="Image of VILLADONQ Project">
+								<div class="box-btn-project">
+									<a href="#" class="btn-project">Watch Video</a>
+								</div>
+							</div>
+															
+						</aside>
 					</div>
 				</div>
-			</div>
-		</section> -->
+</section>
 
 
 <!-- 

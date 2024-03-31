@@ -3,29 +3,23 @@
 	aspect-ratio: 16/9;
 	object-fit: cover;
 	min-height: 300px;
-	width: 500px;
+	width: 550px;
 }
 
 
 
-.slide h3
-{
-	
 
+.slide
+{ 
+	width:550px;
+	height:300px; 
 }
-
-.slide{ min-width:500px; height:100%; }
 
 .slide:hover{
 	cursor: pointer;
 }
 
 
-	
-   /* color: var(--colorBlueMedium);
-    background-color: red;
-    width: 100%;
-}*/
  .slide:hover .text-slide-box {
  	position: relative;
  	top: -40%;
@@ -52,7 +46,7 @@
 
 .slider--inner
 {	
-	width: 500px;
+	width: 550px;
 	display: flex;
 	align-items: center;
 	flex-direction: row;
@@ -60,7 +54,7 @@
 	height: 300px;
 	transition: transform .7s ease-in;
 	border-radius: 16px;
-	padding: 0;
+	padding: 0px;
 
 }
 
