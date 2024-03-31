@@ -136,6 +136,18 @@
 
 }
 
+.box-btn-project{
+
+  transition: all ease-out .3s;
+  background: rgba(0,0,0,.7);
+
+}
+
+.btn-project
+{
+  transition: all ease-out .3s;
+  visibility: visible;
+}
 
 }
 
@@ -168,6 +180,20 @@
 	{
 		text-align: center;
 	}
+
+	.box-btn-project{
+
+  transition: all ease-out .3s;
+  background: rgba(0,0,0,.7);
+
+}
+
+.btn-project
+{
+  transition: all ease-out .3s;
+  visibility: visible;
+}
+
 	
 }
 
