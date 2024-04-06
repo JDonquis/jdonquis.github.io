@@ -6,7 +6,7 @@
 --colorGreen:#40ffdc;
 --colorBlueLight:#00a9d4;
 --colorBlueMedium:#2596be;
---colorBlueDark:#240047;
+--colorBlueDark:#2E4057;
 --colorDark:#1c0021;
 }
 
@@ -194,11 +194,22 @@ footer{
 
 .title-sections
 {
-  font-size: 18pt;
+  font-size: 24pt;
   font-weight: 700;
   color: var(--colorBlueDark);
   font-family: 'Montserrat-Bold';
+  position: relative;
+}
 
+
+
+.title-sections-center
+{
+  font-size: 24pt;
+  font-weight: 700;
+  font-family: 'Montserrat-Bold';
+  text-align: center;
+  color: var(--colorBlueMedium);
 
 }
 
@@ -279,14 +290,14 @@ footer{
 }
 
 .navbar-nav-mobile{
+  position: fixed;
+  top: 0px;
+  left: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: var(--bodyColorTransparent);
-  position: fixed;
-  top: 0px;
-  left: 0px;
   width: 100vw;
   height: 100vh;
   gap: 30px;
@@ -311,7 +322,7 @@ footer{
 #type-text{
 
   width: 100%;
-  font-size: 18pt;
+  font-size: 24pt;
   border-right: 5px solid;
   color: var(--colorBlueDark);
   white-space: nowrap;
@@ -423,6 +434,14 @@ footer{
   flex-wrap: wrap;
   justify-content: space-between;
   padding-top:30px;
+
+}
+
+.row-3{
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
 
 }
 
@@ -566,7 +585,7 @@ footer{
 
 .box-about-me-text p{
 
-    font-size: 15pt;
+    font-size: 14pt;
     line-height: 1.7;
     padding-top: 30px;
     font-family: Roboto-Regular;
@@ -583,7 +602,7 @@ footer{
   
 }
 
-.about-me-image-box::before {
+/*.about-me-image-box::before {
   content: "";
   position: absolute;
   top: 0px;
@@ -596,7 +615,7 @@ footer{
   opacity: .4;
   border-radius: 50%;
 }
-
+*/
 
 
 
@@ -1074,6 +1093,145 @@ to{ height:100%; }
 
 
 
+/*-------------------------------------- Footer ----------------------- */
+
+.box-say-hello
+{
+  width: 100%;
+  max-width: 500px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--bodyColor);
+  padding: 30px;
+/*box-shadow: rgba(37, 150, 190, 0.15) 0px 2px 8px 0px;*/
 
 
-/*------------------------------------------------------------------------- Hamburger ------------------------------------------*/
+}
+
+.p-inbox
+{
+  max-width: 500px;
+  text-align: center;
+  font-size: 16pt;
+  line-height: 1.5;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-family: Roboto-Regular;
+
+}
+
+.row-btn-contact
+{
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.box-icon
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.box-icon:hover
+{
+  cursor: pointer;
+}
+
+.icon-contact
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+/*  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;*/
+  color: var(--colorBlueMedium);
+  font-size: 20pt;
+
+}
+
+.text-icon-contact
+{
+  color: var(--colorBlueDark);
+  font-family: Roboto-Regular;
+  font-size: 16pt;
+}
+
+footer
+{ 
+  padding-top: 50px;
+  padding-bottom: 10px;
+/*  background-color: var(--colorBlueMedium);*/
+
+}
+
+.built-by
+{
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 14pt;
+  font-family: Roboto-Regular;
+  color: var(--colorBlueDark);
+
+}
+
+.text-white
+{
+  color: var(--bodyColor);
+}
+
+.footer-image
+{
+  padding-top: 30px;
+  width: 600px;
+  height: 300px;
+  
+}
+
+.footer-image-absolute-1
+{
+  position: absolute;
+  right: 0px;
+  width: 600px;
+  height: 300px;
+  
+}
+
+.footer-image-absolute-2
+{
+  position: absolute;
+  left: 0px;
+  width: 600px;
+  height: 300px;
+  
+}
+
+.footer-image-absolute-1 img
+{
+   width: 100%;
+  height: 100%;  
+  
+}
+
+.footer-image-absolute-2 img
+{
+  width: 100%;
+  height: 100%;  
+  
+}
+
+.footer-image img
+{
+  width: 100%;
+  height: 100%;  
+}

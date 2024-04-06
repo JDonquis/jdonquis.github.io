@@ -149,6 +149,11 @@
   visibility: visible;
 }
 
+.footer-image-absolute-1, .footer-image-absolute-2
+{
+	display: none;
+}
+
 }
 
 
@@ -194,6 +199,10 @@
   visibility: visible;
 }
 
+.footer-image-absolute-1, .footer-image-absolute-2
+{
+	display: none;
+}
 	
 }
 

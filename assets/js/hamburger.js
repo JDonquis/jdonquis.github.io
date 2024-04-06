@@ -12,3 +12,15 @@ hamburgerBtn.addEventListener("click",e => {
 
 
 })
+
+  document.addEventListener('click', e => {
+
+    if(e.target.matches('.nav-link'))
+    {
+      hamburgerBtn.classList.toggle("is-active");
+      navMobile.classList.toggle("mobile-active");
+      body.classList.toggle("body-paused");
+	  html.classList.toggle("body-paused");
+    }
+  })
+
