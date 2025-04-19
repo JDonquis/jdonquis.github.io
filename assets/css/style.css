@@ -10,6 +10,7 @@
 :root { /* Raíz del documento (equivalente a 'html') */
     --color-background: #15181f;
     --color-background-2:#15181f;
+    --color-background-3:#0a0d14;
     --color-button: #3c91e6;
 
   }
@@ -199,7 +200,7 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background: #fff;
+    background: var(--color-background-3);
     z-index: 99;
     display: -webkit-box;
     display: -ms-flexbox;
