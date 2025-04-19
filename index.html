@@ -1,374 +1,410 @@
+
+<!--========================================================= 
+Author: Juan Donquis
+Version: 2
+============================================================-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<title>My Projects</title>
-		
-	<!-- Icons -->
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+    <title>Juan Donquis Portfolio</title>
+    <meta name="keywords"
+        content="personal portfolio, cv, resume, agency, bootstrap, clean, cv, designer, developer, freelancer, modern, one page portfolio, onepage, personal portfolio, responsive, resume, vcard">
+    <meta name="description" content="Best personal portfolio modern html template.">
+    <meta name="author" content="ashishmaraviya">
+
+    <!-- site Favicon -->
 	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
 
 
-	<!-- FontAwesome -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- css All Plugins Files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
 
-	<!-- Scroll Reveal -->
-	<script src="https://unpkg.com/scrollreveal"></script>
-
-
-	<!-- Description -->
-	<meta name="description" content="Juan Donquis portafolio." />
-	
-	<!-- Custom CSS -->
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/hamburger.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/slider.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-
+    <!-- Main Style -->
+    <link rel="stylesheet" id="main_style" href="assets/css/style.css">
+    <link rel="stylesheet" id="main_style" href="assets/css/dark.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 
 </head>
-<body>
 
-	<header> 
-					
-			<nav class="menu-nav">
-				
-				<div class="container-general container-menu">
-					<div id="box-title-brand">
-						<a href="#" class="title-brand" alt="Go to start" >
-							<h1>JDonquis</h1> 
-						</a>
-					</div>	
+<body class="body-bg">
 
-					 <ul class="navbar-nav flex-row justify-content-end align-items-center">
-				        <li class="nav-item nav-item-active" id="home-link">
-				          <a class="nav-link" aria-current="page" href="#home">Start</a>
-				        </li>
-				        <li class="nav-item" id="about-me-link">
-				          <a class="nav-link" aria-current="page" href="#about-me">About me</a>
-				        </li>
-				        <li class="nav-item" id="projects-link">
-				          <a class="nav-link" aria-current="page" href="#projects">Projects</a>
-				        </li>
-				        <li class="nav-item" id="contact-link">
-				          <a class="nav-link" aria-current="page" href="#contact">Contact</a>
-				        </li>
-				        <li class="nav-item" id="resume-link">
-				          <a class="nav-link" aria-current="page" href="JuanDonquis_Dev_CV_English.pdf" download="JuanDonquis_Dev_CV_English">Resume</a>
-				        </li>
-				      </ul>
+    <!-- Loader -->
+    <div id="bx-overlay">
+        <span class="loader"> </span>
+    </div>
 
-				      <button class="hamburger hamburger--emphatic" aria-hidden="true" type="button" aria-label="Menu">
-						  <span class="hamburger-box">
-						  	<span class="hamburger-inner"></span>
-							  </span>
-					  </button>
+    <!-- Header section -->
+    <header class="bg bx-static">
+        <div class="container">
+            <div class="nav-sec padding-b-50">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html"><h2 class="fw-bold">JDONQUIS</h2></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa fa-bars" style="color: #777;" aria-hidden="true"></i>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav" id="top-menu">
+                                <li class="nav-item active">
+                                    <a class="nav-link bx-nav" aria-current="page" href="#home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link bx-nav" href="#about">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link bx-nav" href="#experience">Experience</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link bx-nav" href="#portfolio">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link bx-nav" href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="custom-btn bx-btn m-r-5px" target="_blank" href="./assets/cv/CV_JUANDONQUIS_ENGLISH.pdf">Download CV</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-					  <ul class="navbar-nav-mobile" aria-hidden="true">
-				        <li class="nav-item nav-item-active" id="start-link-mobile">
-				          <a class="nav-link" aria-current="page" href="#home">Start</a>
-				        </li>
-				        <li class="nav-item" id="about-me-link">
-				          <a class="nav-link" href="#about-me">About me</a>
-				        </li>
-				        <li class="nav-item" id="projects-link">
-				          <a class="nav-link" href="#projects">Projects</a>
-				        </li>
-				        <li class="nav-item" id="contact-link">
-				          <a class="nav-link" href="#contact">Contact</a>
-				        </li>
-				        <li class="nav-item" id="resume-link-mobile">
-				          <a class="nav-link" href="JuanDonquis_Dev_CV_English.pdf" download="JuanDonquis_Dev_CV_English">Resume</a>
-				        </li>
-				      </ul>
-				    </div>
-			</nav>
-		
-	</header>
+    <!-- Home section -->
+    <section id="home" class="bx-home home-section bx-section padding-tb-80 bg-shape-hero">
+        <div class="container p-0">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="basic-details" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="info">
+                            <span class="primary-color">Hello, My name is</span>
+                            <h1>Juan Donquis</h1>
+                            <h2>I'm a Web Developer</h2>
+                            <p>
+                                Hi! I'm a web developer with 2 years of experience in Laravel/PHP, 
+                                building efficient and scalable web systems 
+                            </p>
+                            <div class="buttons">
+                                <a class="custom-btn bx-btn" href="#contact">Hire Me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="profile-img">
+                        <div class="profile-detail">
+                            <img src="assets/img/profile.webp" alt="Juan Donquis Photo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Home section End -->
 
+ 
+    <!-- Start About section -->
+    <section id="about" class="bx-about-section bx-section padding-tb-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-6">
+                    <div class="sec-img" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                        <img src="assets/img/working-2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-6">
+                    <div class="detailed-content" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                        <div class="title">
+                            <p class="light-txt">About us</p>
+                            <h2>Backend Developer,  
+                                <span class="primary-clr">Bug Slayer</span></h2>
+                            <p>Hi! I'm a passionate web developer with 2 years of experience building web systems using Laravel and PHP — from robust APIs to dynamic projects with Inertia.js.</p>
+                        </div>
+                        <div class="personal-detail">
+                            <div class="content">
+                                <div class="left">
+                                    <div class="name pb">
+                                        <span class="info">Full Name :</span>
+                                        <span class="detail">Juan Donquis </span>
+                                    </div>
+                                    <div class="age pb">
+                                        <span class="info">Age :</span>
+                                        <span class="detail">22 Years</span>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="email pb">
+                                        <span class="info">Email :</span>
+                                        <span class="detail">juandonquis07@gmail.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About section -->
 
+    <!-- Start Experience & Education section -->
+    <section id="experience" class="bx-experience-section bx-section padding-tb-80">
+        <div class="container">
+            <div class="row mb-m-30">
+                <div class="title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                    <p class="light-txt">qualification</p>
+                    <h2>My<span class="primary-clr"> achievements</span></h2>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="education bx-box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                        <h4>Education</h4>
+                        <ul class="timeline">
+                            <li class="timeline-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-info">
+                                        <span>March 16, 2019 - 2025</span>
+                                    </div>
+                                    <h5 class="timeline-title">Bachelor in Systems Engineering<span class="sub">- UNEFA</span></h5>
+                                    <p>
+                                        <span class="fw-bold">Key Courses:</span> Database Systems, Software Architecture, Advanced Programming.
+                                    </p>
+                                    <p>
+                                       <span class="fw-bold"> Project:</span> Multi-Inventory Management API System
+                                       Developed with Laravel (RESTful API) + React.
+                                    </p>
+                                </div>
+                            </li>
+                           
+                            <li class="timeline-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-info">
+                                        <span>June 1, 2018 - 2019</span>
+                                    </div>
+                                    <h5 class="timeline-title">Higher Secondary<span class="sub">- CEDAIN-UNEFM</span></h5>
+                                    <p>Traditional academic program where I discovered my passion for technology through independent exploration</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="experience bx-box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                        <h4>experience</h4>
+                        <ul class="timeline">
+                            <li class="timeline-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-info">
+                                        <span>October, 2023 - Present</span>
+                                    </div>
+                                    <h5 class="timeline-title">Backend Developer<span class="sub">- Secretaria de Salud</span></h5>
+                                    <p>
+                                        <span class="fw-bold">Multi-Inventory Management System:</span>
+                                             Designed and deployed PostgreSQL-backed API to handle 3+ inventories
+                                    </p>
+                                    <p>
+                                        <span class="fw-bold">Medical Case Registry:</span>
+                                        Built Laravel/Inertia.js + Svelte admin panel with MySQL database to digitize medical cases records annually.
 
-	<main>
-		
-		<section class="container-general" id="home">
-			<div class="box-typed-text">
-				<div class="box-typed-text-inner">
-					<h1 id="type-text" >Hi, I'm Juan Donquis</h1>
-				</div>
-			</div>
-			<div class="row">
-				<div class="introduce-card mt-4">
-					<div class="row-content-photo">
-						<div class="card-content">
-							<h3 class="title-card">PHP Developer</h3>
-							<p class="card-info">Laravel</p>
-							<p class="card-info">Wordpress</p>
-							<p class="card-info">Vue js | Bootstrap | Tailwind CSS</p>
-							<p class="card-info">3 Years Experience</p>
-						</div>
-						<div class="" id="box-card-image">
-							<div class="image"></div>
+                                    </p>
 
-						</div>
-					</div>
-					<div class="row-card-links">
-						<ul >
-							<li>	
+                                    <p>
+                                        <span class="fw-bold">Ubuntu VPS Configuration:</span>
+                                        Set up and optimized Apache web servers for Laravel applications.
+                                    </p>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Experience & Education Section -->
 
-								<a href="https://www.linkedin.com/in/jdonquis/" target="_blank" class="social-link">
-									<i class="fa-brands fa-linkedin"></i>
-								</a>
-							</li>
+    <!-- Start Portfolio Section -->
+    <section id="portfolio" class="bx-portfolio-section bx-section portfolio padding-tb-80">
+        <div class="container">
+            <div class="title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                <p class="ligh-title">Portfolio</p>
+                <h2>My <span class="primary-clr">Portfolio</span></h2>
 
-							<li>
-								<a href="https://github.com/JDonquis" target="_blank" class="social-link">
-									<i class="fa-brands fa-github"></i>
-								</a>
-							</li>
-							<li>
-								<a target="_parent"  href="https://www.youtube.com/@JuanDonquis" class="social-link">
-									<i class="fa-brands fa-youtube"></i>
-								</a>
-							</li>		 
-						</ul>
-					</div>
-				</div>
-				<div class="card-skills-resume">
-					<div class="slider">
-						<div class="slider--inner">
-							
-							<div class="slide">
-								<img src="./assets/img/sismed.webp" alt="Image of SISMED Project">
-								<div class="text-slide-box">
-									<h3>SISMED</h3>
-								</div>
-							</div>
-							<div class="slide">
-								<img src="./assets/img/sysver.webp" alt="Image of SysVer Project">
-								<div class="text-slide-box">
-									<h3>SYSVER</h3>
-								</div>
-							</div>
-							<div class="slide">
-								<img src="./assets/img/villadonq.webp" alt="Image of VillaDonq Project">
-								<div class="text-slide-box">
-									<h3>VILLADONQ</h3>
-								</div>
-							</div>
-							
-						</div>
-					</div>
-				</div>
-			</div>
-			
-		</section>
+            </div>
+            <div class="row m-b-minus-24px">
+                <div class="portfolio-content">
+                    <div>
+                        <div class="row">
+                            <div class="col-sm-12" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                                <div class="portfolio-tabs">
+                                    <ul>
+                                        <li class="filter" data-filter="all">ALL</li>
+                                        <li class="filter" data-filter=".backend">BACKEND</li>
+                                        <li class="filter" data-filter=".full">FULL STACK</li>
+                                        <li class="filter" data-filter=".university">UNIVERSITY</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12" data-aos="fade-up" data-aos-duration="1500"
+                                data-aos-delay="600">
+                                <div class="portfolio-content-items">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-6 col-xs-12 mix backend">
+                                            <div class="hovereffect">
+                                                <div class="portfolio-img">
+                                                    <img src="assets/img/projects/sismed3.png" alt="graphics">
+                                                    <h3><span>BACKEND</span></h3>
+                                                </div>
+                                                <div class="overlay">
+                                                    <div class="overlay-info">
+                                                        <a class="info" target="_blank" href="https://sismed.saludfalcon.org" >SISMED - Medical Inventory Controller</a>
+                                                        <a class="info" target="_blank" href="https://sismed.saludfalcon.org">
+                                                            <i class="fa-solid fa-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-xs-12 mix backend">
+                                            <div class="hovereffect">
+                                                <div class="portfolio-img">
+                                                    <img src="assets/img/projects/saludfalcon.png" alt="design">
+                                                    <h3><span>BACKEND</span></h3>
+                                                </div>
+                                                <div class="overlay">
+                                                    <div class="overlay-info">
+                                                        <a class="info" target="_blank" href="https://saludfalcon.org">SaludFalcon - Patient Management Platform</a>
+                                                        <a class="info"
+                                                            href="https://saludfalcon.org" target="_blank">
+                                                            <i class="fa-solid fa-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-xs-12 mix full university">
+                                            <div class="hovereffect">
+                                                <div class="portfolio-img">
+                                                    <img src="assets/img/projects/unefacare.png" alt="university">
+                                                    <h3><span>UNIVERSITY</span> <span>FULL STACK</span></h3>
+                                                </div>
+                                                <div class="overlay">
+                                                    <div class="overlay-info">
+                                                        <a class="info" target="_blank" href="https://youtu.be/cn0_9b0sdis?si=EUpsCAS3JrnshhJZ">UNEFACARE - Pharmaceutical Inventory System</a>
+                                                        <a class="info"
+                                                            href="https://youtu.be/cn0_9b0sdis?si=EUpsCAS3JrnshhJZ"><i
+                                                                class="fa-solid fa-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-xs-12 mix backend university">
+                                            <div class="hovereffect">
+                                                <div class="portfolio-img">
+                                                    <img src="assets/img/projects/sysver.png" alt="university">
+                                                    <h3><span>UNIVERSITY</span> <span>BACKEND</span></h3>
+                                                </div>
+                                                <div class="overlay">
+                                                    <div class="overlay-info">
+                                                        <a class="info" target="_blank" href="https://www.youtube.com/watch?v=6J_eJuc5klQ" >SYSVER - Area, Billing & Attendance Management System</a>
+                                                        <a class="info" 
+                                                            href="https://www.youtube.com/watch?v=6J_eJuc5klQ"><i
+                                                                class="fa-solid fa-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Portfolio Section -->
 
-		<section class="container-general mt-50px" id="about-me">
-			<div class="row-about-me">
-				<div class="p-10px">
-					<h2 class="title-sections">About me</h2>
-					<div class="max-width-560px box-about-me-text ">
-						<p>
-							Hi! I'm a passionate web developer with more than <span>3 years of experience</span> in creating web systems. In 2019 I started with <span>Wordpress</span>, where I build practice projects, usign tools like Oxigen, Elementor, and ACF
-						</p>
-						
-						<p>
-							After 2020 I started a University project VillaDonq, where I took my first steps on Laravel, then in 2022 started SYSVER a project aimed to all "Gran Bases de Misiones de Paz" in Venezuela, usign <span>Laravel</span> for the API Back-end and <span>React</span> for the Front-end. In 2023, I started  working as a developer for the Deparment of Health of Falcon, where I currently work on SISMED, a system for managing the inventories of all hospitals in the state</p>
-
-						<p>
-						<span>I dedicated myself to improve my technique and skills to provide the best service</span>
-
-						</p>
-
-					</div>
-				</div>
-				<div class="flex-box-center">
-					<div class="about-me-image-box">
-						<img src="./assets/img/information.svg" alt="">
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="container-general mt-50px overflow-x-hidden" id="projects">
-			<div class="row-2">
-				<div class="p-10px container-projects">
-					<h2 class="title-sections">Projects</h2>
-					<div class="box-project">
-						<article class="article-project">
-							<h3 class="title-article">SISMED</h3>
-							<div class="article-text-project">
-								<p>Local inventory system designed specifically for the Health Secretary of Falcon state. Its primary goal is to enhance data visualization and ensure the integrity of information. By centralizing inventory data and implementing visual representation techniques, the system enables the Health Secretary to easily monitor stock levels and make informed decisions regarding resource allocation.</p>
-							</div>
-							<div class="article-text-project">
-								<h4>Work Experience</h4>
-								<p>As a backend programmer, I achieved the proper balance of inventory inputs and outputs, as well as the correct visualization of inventory movements. Additionally, I implemented other features such as alerts for low stock and the display of general system statistics.</p>
-							</div>
-							<div class="article-text-project">
-								<h4>Tecnologies</h4>
-								<ul class="list-tecnologies">
-									<li class="li-tecno">
-										Laravel 10
-									</li>
-									<li class="li-tecno">
-										React
-									</li>
-									<li class="li-tecno">
-										PostgreSQL
-									</li>
-								</ul>
-							</div>
-						</article>
-						<aside class="aside-project">
-							
-							<div class="box-image-project">
-								<img src="./assets/img/sismed.webp" alt="Image of SISMED Project">
-								<div class="box-btn-project">
-									<a target="_blank" href="https://www.youtube.com/watch?v=ShuEci7_5gk" class="btn-project">Watch Video</a>
-								</div>
-							</div>
-															
-						</aside>
-					</div>
-					<div class="box-project">
-						<article class="article-project">
-							<h3 class="title-article">SYSVER</h3>
-							<div class="article-text-project">
-								<p>The local system aims to ensure the efficient management of administrative operations within the "Gran Base de Misiones de Paz Y Vida" in Falcon state. It is specifically designed to streamline and optimize the day-to-day administrative tasks carried out within the organization. By automating repetitive tasks and implementing standardized procedures, the system reduces manual effort, minimizes errors, and enhances overall operational efficiency.</p>
-							</div>
-							<div class="article-text-project">
-								<h4>Work Experience</h4>
-								<p>SYSVER is a highly comprehensive project where I developed a module for managing user payments, account statuses, and debts. Additionally, I created a module to handle attendance for various departments within the organization's base. The project also includes functionalities for personnel management, department management, and provides statistical analysis of the most relevant system data.</p>
-							</div>
-							<div class="article-text-project">
-								<h4>Tecnologies</h4>
-								<ul class="list-tecnologies">
-									<li class="li-tecno">
-										Laravel 8
-									</li>
-									<li class="li-tecno">
-										React
-									</li>
-									<li class="li-tecno">
-										MySQL
-									</li>
-								</ul>
-							</div>
-						</article>
-						<aside class="aside-project">
-							
-							<div class="box-image-project">
-								<img src="./assets/img/sysver.webp" alt="Image of SYSVER Project">
-								<div class="box-btn-project">
-									<a target="_blank" href="https://www.youtube.com/watch?v=6J_eJuc5klQ" class="btn-project">Watch Video</a>
-								</div>
-							</div>
-															
-						</aside>
-					</div>
-<!-- 
-					<div class="box-project">
-						<article class="article-project">
-							<h3 class="title-article">VILLADONQ</h3>
-							<div class="article-text-project">
-								<p>VILLADONQ is specifically designed to meet the needs of primary and secondary educational institutions. Its main objective is to efficiently manage all administrative processes of the institution, simplifying tasks such as student registration, schedule management, enrollment administration, and attendance tracking. </p>
-							</div>
-							<div class="article-text-project">
-								<h4>Work Experience</h4>
-								<p>During my time at VillaDonq, I played a vital role in developing several key modules, including grade management, attendance tracking, evaluation plan creation, academic periods, and enrollment periods. One of the major challenges we faced in this project was ensuring the accurate handling of academic period dates and evaluation plans. As the system heavily relied on event tracking, it was crucial for us to implement a robust structure that efficiently managed these aspects.
-							</p>
-							</div>
-							<div class="article-text-project">
-								<h4>Tecnologies</h4>
-								<ul class="list-tecnologies">
-									<li class="li-tecno">
-										Laravel 7
-									</li>
-									<li class="li-tecno">
-										JQuery and JavaScript
-									</li>
-									<li class="li-tecno">
-										MySQL
-									</li>
-								</ul>
-							</div>
-						</article>
-						<aside class="aside-project">
-							
-							<div class="box-image-project">
-								<img src="./assets/img/villadonq.webp" alt="Image of VILLADONQ Project">
-								<div class="box-btn-project">
-									<a href="#" class="btn-project">Watch Video</a>
-								</div>
-							</div>
-															
-						</aside>
-					</div> -->
-				</div>
-</section>
-
-
-	</main>
-	 <footer>
-	
-		<section class="container-general" id="contact">
-			
-			<div class="box-say-hello">
-			<h2 class="title-sections-center">Let's to work!</h2>
-
-				<p class="w-md-50 w-100 text-center p-inbox">My Inbox is always open to new projects. If you want work with me or have a question contact me:</p>
-			
-			<div class="row-3">
-				<div class="row-btn-contact">
-					<div class="box-icon" id="email-box">
-						<a href="#" class="icon-contact">
-							<i class="fa-solid fa-envelope"></i>
-						</a>
-						<span class="text-icon-contact">juandonquis07@gmail.com</span>
-					</div>
-					<a target="_blank" href="https://www.linkedin.com/in/jdonquis/" class="box-icon">
-						
-						<div class="icon-contact">
-							<i class="fa-brands fa-linkedin"></i>
-						</div>
-						<span class="text-icon-contact">jdonquis</span>			
-					</a>
-				<div class="footer-image">
-					<img src="./assets/img/contact8.svg" alt="">
-				</div>
-			</div>
-				
-
-			</div>
-
-		<div class="footer-image-absolute-2">
-			<img src="./assets/img/chating.svg" alt="">
-		</div>
-
-		<div class="footer-image-absolute-1">
-					<img src="./assets/img/videocall.svg" alt="">
-		</div>
-
-		</div>
-		
-
-		
-		<p class="built-by">Built by Juan Donquis</p>
-		</section>
-	</footer>
  
 
+    <!-- Start Contact us Section -->
+    <section id="contact" class="bx-contact-section bx-section padding-tb-80 body-bg">
+        <div class="container">
+            <div class="title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                <p class="light-txt">Contact</p>
+                <h2>Get In<span class="primary-clr"> Touch</span></h2>
+            </div>
+                <div class="row">
 
+                    <div class="col-12">
+                        <div class="detailed-content" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                            <div class="personal-detail">
+                                <div class="content">
+                                    <div class="text-white">
+                                        <div class="name pb ">
+                                            <span class="info fw-bold">LinkedIn:</span>
+                                            <span class="detail"><a target="_blank" href="https://www.linkedin.com/in/jdonquis/">jdonquis </a> </span>
+                                        </div>
 
+                                        <div class="email pb">
+                                            <span class="info fw-bold">Email :</span>
+                                            <span class="detail">juandonquis07@gmail.com</span>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-<script type="text/javascript" src="assets/js/script.js"></script>
-<script type="text/javascript" src="assets/js/navbar.js"></script>
-<script type="text/javascript" src="assets/js/hamburger.js"></script>
-<script type="text/javascript" src="assets/js/slider.js"></script>
+        </div>
+    </section>
+    <!-- End Contact us Section -->
 
+    <!-- Start Footer -->
+    <footer class="footer bg-clr">
+        <div class="container">
+            <div class="bx-footer-detail">
+                <div class="bx-copy">
+                    Developed by Juan Donquis | 2025
+                </div>
 
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Page Scroll Top -->
+    <div id="scrollup">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </div>
+
+    <!-- Plugins JS -->
+<!-- Plugins CDN -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- Main Js -->
+    <script src="assets/js/main.js"></script>
 
 </body>
-</html>
 
+</html>
